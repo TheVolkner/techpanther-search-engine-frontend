@@ -3,8 +3,12 @@
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html{ height: 100%; }
+body {
+  margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
+  min-height: 100vh;
+  position: relative;
+}
 
 .form-control:focus {
   border-color: #c7ac12;
