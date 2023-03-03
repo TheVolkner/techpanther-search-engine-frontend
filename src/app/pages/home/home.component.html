@@ -1,6 +1,6 @@
-<div class="container mx-auto mt-5" id="contenedorHome">
-  <div class="row">
-    <div class="col-sm-12 d-flex justify-content-center mt-3">
+<section class="container mx-auto mt-5" id="contenedorHome">
+  <article class="row">
+    <section class="col-sm-12 d-flex justify-content-center mt-3">
       <img
         src="../../assets/panther.png"
         alt="PantherSearchEngine.png"
@@ -13,23 +13,29 @@
       >
         Tech Panther
       </h1>
-    </div>
-    <div class="col-sm-12 mx-auto text-center mt-5 w-75">
-      <div class="input-group mb-3">
+    </section>
+    <section class="col-sm-12 mx-auto text-center mt-5 w-75">
+      <section class="input-group mb-3">
         <input
           type="text"
           required
           name="busqueda"
-         [(ngModel)]="busqueda"
+          [(ngModel)]="busqueda"
           class="form-control bg-black bg-opacity-25 rounded-5 text-white py-3"
           placeholder="Indique su busqueda..."
           aria-label="Search Bar"
           aria-describedby="basic-addon1"
         />
-      </div>
-    </div>
+      </section>
+    </section>
     <div class="col-sm-12 mt-2 mx-auto text-center">
-      <button type="submit" (click)="ejecutarBusqueda()" class="btn bg-transparent btn-outline-warning botonEnviar">Buscar con TechPanther</button>
+      <button
+        type="submit"
+        (click)="ejecutarBusqueda()"
+        class="btn bg-transparent btn-outline-warning botonEnviar"
+      >
+        Buscar con TechPanther
+      </button>
     </div>
-  </div>
-</div>
+  </article>
+</section>

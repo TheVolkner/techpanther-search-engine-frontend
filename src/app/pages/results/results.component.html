@@ -1,45 +1,45 @@
-
-  <div class="container m-0 p-0 resultados">
-    <div class="row">
-      <div class="col-sm-12 mx-auto text-center col-md-2 mt-2 ps-sm-0 ps-md-3">
-        <img
-          src="../../assets/panther.png"
-          alt="PantherSearchEngine.png"
-          width="80"
-          height="80"
-        />
-      </div>
-      <div class="col-sm-12 mt-2 col-md-10 mt-md-4 me-auto">
-        <input
-          type="text"
-          required
-          name="busqueda"
-          [(ngModel)]="busqueda"
-          class="form-control bg-black bg-opacity-25 rounded-5 text-white py-3"
-          placeholder="Indique su busqueda..."
-          aria-label="Search Bar"
-          aria-describedby="basic-addon1"
-        />
-      </div>
-    </div>
-  </div>
-  <hr class="text-secondary w-100" />
-  <div class="container" id="filasNoticias">
-    <div class="row">
-      <div class="col-12" *ngFor="let p of paginas">
-        <p class="text-white letra-url cursor-manita" [innerHTML]="p.url"></p>
-        <a (click)="navegarLink(p.url)"
-          ><p
-            class="letra-title text-primary cursor-manita"
-            [innerHTML]="p.title"
-          ></p
-        ></a>
-        <p
-          class="text-white letras-description cursor-manita"
-          [innerHTML]="p.description"
-        ></p>
-        <hr class="text-secondary w-100" />
-      </div>
-    </div>
-  </div>
-
+<section class="container m-0 p-0 resultados">
+  <article class="row">
+    <section
+      class="col-sm-12 mx-auto text-center col-md-2 mt-2 ps-sm-0 ps-md-3"
+    >
+      <img
+        src="../../assets/panther.png"
+        alt="PantherSearchEngine.png"
+        width="80"
+        height="80"
+      />
+    </section>
+    <section class="col-sm-12 mt-2 col-md-10 mt-md-4 me-auto">
+      <input
+        type="text"
+        required
+        name="busqueda"
+        [(ngModel)]="busqueda"
+        class="form-control bg-black bg-opacity-25 rounded-5 text-white py-3"
+        placeholder="Indique su busqueda..."
+        aria-label="Search Bar"
+        aria-describedby="basic-addon1"
+      />
+    </section>
+  </article>
+</section>
+<hr class="text-secondary w-100" />
+<section class="container" id="filasNoticias">
+  <article class="row">
+    <section class="col-12" *ngFor="let p of paginas">
+      <p class="text-white letra-url cursor-manita" [innerHTML]="p.url"></p>
+      <a (click)="navegarLink(p.url)"
+        ><p
+          class="letra-title text-primary cursor-manita"
+          [innerHTML]="p.title"
+        ></p
+      ></a>
+      <p
+        class="text-white letras-description cursor-manita"
+        [innerHTML]="p.description"
+      ></p>
+      <hr class="text-secondary w-100" />
+    </section>
+  </article>
+</section>
